@@ -10,6 +10,11 @@ export const metadata: Metadata = {
   keywords: ['Playboi Carti', 'Carti', 'Whole Lotta Red', 'Die Lit', 'Self Titled', 'Days Since', 'Days Since Carti Dropped', 'Days Since Carti Dropped an Album', 'Days Since Carti Dropped Whole Lotta Red', 'Days Since Carti Dropped Die Lit', 'Days Since Carti Dropped Self Titled', 'WLR'],
   authors: [{ name: 'Tosin Ogunjobi' }],
   robots: 'index, follow',
+  icons: {
+    icon: ['/favicon.ico?v=4'],
+    apple: ['/apple-touch-icon.png?v=4'],
+    shortcut: ['/apple-touch-icon.png'],
+  }
 }
 
 export default function RootLayout({
