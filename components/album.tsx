@@ -25,9 +25,10 @@ function Album({ name, image, date, detailed }: { name: string, image: string, d
                     width={280}
                     height={280}
                     alt={name}
+                    priority={false}
                 />
             </div>
-            <div className='py-3 text-center'>
+            <div className='py-3 text-center' suppressHydrationWarning={true}>
                 {!detailed ? `${DaysSince(date)} Days` : <CountUpTimer startDate={date} />}
             </div>
         </div>

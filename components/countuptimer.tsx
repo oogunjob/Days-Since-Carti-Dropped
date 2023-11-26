@@ -31,7 +31,7 @@ const CountUpTimer = ({ startDate }: { startDate: string }) => {
     }, [startDate]);
 
     return (
-        <div>
+        <div suppressHydrationWarning={true}>
             {timeDiff.days} DAYS {timeDiff.hours} HOURS {timeDiff.minutes} MINUTES {timeDiff.seconds} SECONDS
         </div>
     );
