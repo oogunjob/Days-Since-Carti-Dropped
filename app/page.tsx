@@ -10,10 +10,10 @@ export default function Home() {
       </h1>
       <div className="flex flex-col w-full items-center">
         <div className="flex flex-col md:flex-row md:justify-between">
-          <Album name="Playboi Carti" image="self_titled" date="04-17-2017" />
-          <Album name="Die Lit" image="die_lit" date="05-11-2018" />
+          <Album name="Playboi Carti" image="self_titled" date="2017-04-17T00:00:00.000Z" />
+          <Album name="Die Lit" image="die_lit" date="2018-05-11T00:00:00.000Z" />
         </div>
-        <Album name="Whole Lotta Red" image="whole_lotta_red" date="12-25-2020" detailed />
+        <Album name="Whole Lotta Red" image="whole_lotta_red" date="2020-12-25T00:00:00.000Z" detailed />
       </div>
 
       <div className="py-3 text-lg text-center font-bold">
