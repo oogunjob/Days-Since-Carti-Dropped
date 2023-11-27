@@ -28,7 +28,7 @@ export default function Home() {
           <Album name="Whole Lotta Red" image="whole_lotta_red" date="2020-12-25T00:00:00.000Z" detailed />
         </div>
         <div className="py-3 text-lg text-center font-bold">
-          plaYb0i cArtI's next aLBUm _______ wILL be dR0PPiNG 1n _____ dAyS 💕💋
+          plaYb0i cArtI's n3xT aLBUm _______ wILL bE dR0PPiNG 1n _____ dAyS 💕💋
         </div>
         <Footer />
       </main>
