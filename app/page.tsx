@@ -1,4 +1,3 @@
-"use client";
 import Album from '@/components/album'
 import Footer from '@/components/footer'
 import Script from 'next/script';

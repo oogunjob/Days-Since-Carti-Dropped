@@ -1,4 +1,3 @@
-"use client";
 import React from 'react'
 import CountUpTimer from './countuptimer';
 import Image from 'next/image';
