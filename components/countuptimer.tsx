@@ -8,9 +8,6 @@ const CountUpTimer = ({ startDate }: { startDate: string }) => {
         const start = new Date(startDate);
         const diff = now.getTime() - start.getTime();
 
-        console.log("pastDate: " + start);
-        console.log("currentDate: " + now);
-
         let seconds = Math.floor(diff / 1000);
         let minutes = Math.floor(seconds / 60);
         let hours = Math.floor(minutes / 60);
@@ -19,6 +16,11 @@ const CountUpTimer = ({ startDate }: { startDate: string }) => {
         hours = hours % 24;
         minutes = minutes % 60;
         seconds = seconds % 60;
+
+        console.log("Days: " + days);
+        console.log("Hours: " + hours);
+        console.log("Minutes: " + minutes)
+        console.log("Seconds: " + seconds);
 
         return { days, hours, minutes, seconds };
     };
