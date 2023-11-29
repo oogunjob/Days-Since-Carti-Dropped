@@ -44,7 +44,7 @@ const CountUpTimer = ({ startDate }: { startDate: string }) => {
 
     if (!isClient || !timeDiff) {
         // Return null or a loader until the actual date is available
-        return <div>...</div>
+        return <div className='text-black'>.</div>
     }
 
     return (
