@@ -16,17 +16,11 @@ const CountUpTimer = ({ startDate }: { startDate: string }) => {
         minutes = minutes % 60;
         seconds = seconds % 60;
 
-        console.log("Days: " + days);
-        console.log("Hours: " + hours);
-        console.log("Minutes: " + minutes)
-        console.log("Seconds: " + seconds);
-
         return { days, hours, minutes, seconds };
     };
 
-    // Initialize with null
-    const [timeDiff, setTimeDiff] = useState<{days: number, hours: number, minutes: number, seconds: number} | null>(null);
-    const [isClient, setIsClient] = useState<boolean>(false); // state to determine if it's client-side
+    const [timeDiff, setTimeDiff] = useState<{ days: number, hours: number, minutes: number, seconds: number } | null>(null);
+    const [isClient, setIsClient] = useState<boolean>(false);
 
     useEffect(() => {
         // Set to true once component mounts, indicating client-side rendering
@@ -48,8 +42,8 @@ const CountUpTimer = ({ startDate }: { startDate: string }) => {
     }, [startDate, isClient]);
 
     if (!isClient || !timeDiff) {
-        // Return null or a loader until the actual data is available
-        return <div>Loading...</div>;
+        // Return null or a loader until the actual date is available
+        return <div>...</div>
     }
 
     return (
