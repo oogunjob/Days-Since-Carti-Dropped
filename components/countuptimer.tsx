@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 
 const CountUpTimer = ({ startDate }: { startDate: string }) => {
-
     const calculateTimeDifference = (startDate: string) => {
         const now = new Date();
         const start = new Date(startDate);
@@ -25,18 +24,36 @@ const CountUpTimer = ({ startDate }: { startDate: string }) => {
         return { days, hours, minutes, seconds };
     };
 
-    const [timeDiff, setTimeDiff] = useState(calculateTimeDifference(startDate));
+    // Initialize with null
+    const [timeDiff, setTimeDiff] = useState<{days: number, hours: number, minutes: number, seconds: number} | null>(null);
+    const [isClient, setIsClient] = useState<boolean>(false); // state to determine if it's client-side
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            setTimeDiff(calculateTimeDifference(startDate));
-        }, 1000);
+        // Set to true once component mounts, indicating client-side rendering
+        setIsClient(true);
+    }, []);
 
-        return () => clearInterval(interval);
-    }, [startDate]);
+    useEffect(() => {
+        if (isClient) {
+            // Set the initial time difference immediately, then update every second
+            setTimeDiff(calculateTimeDifference(startDate));
+
+            const interval = setInterval(() => {
+                setTimeDiff(calculateTimeDifference(startDate));
+            }, 1000);
+
+            // Clear interval on cleanup
+            return () => clearInterval(interval);
+        }
+    }, [startDate, isClient]);
+
+    if (!isClient || !timeDiff) {
+        // Return null or a loader until the actual data is available
+        return <div>Loading...</div>;
+    }
 
     return (
-        <div suppressHydrationWarning={true}>
+        <div>
             {timeDiff.days} DAYS {timeDiff.hours} HOURS {timeDiff.minutes} MINUTES {timeDiff.seconds} SECONDS
         </div>
     );
