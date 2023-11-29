@@ -7,6 +7,9 @@ function DaysSince(dateString: string) {
     const pastDate: Date = new Date(dateString);
     const currentDate: Date = new Date();
 
+    console.log("pastDate: " + pastDate);
+    console.log("currentDate: " + currentDate);
+
     const daysSince: number = Math.floor((currentDate.getTime() - pastDate.getTime()) / (1000 * 60 * 60 * 24));
 
     return daysSince;

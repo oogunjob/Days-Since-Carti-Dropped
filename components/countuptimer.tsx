@@ -8,6 +8,9 @@ const CountUpTimer = ({ startDate }: { startDate: string }) => {
         const start = new Date(startDate);
         const diff = now.getTime() - start.getTime();
 
+        console.log("pastDate: " + start);
+        console.log("currentDate: " + now);
+
         let seconds = Math.floor(diff / 1000);
         let minutes = Math.floor(seconds / 60);
         let hours = Math.floor(minutes / 60);
