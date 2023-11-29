@@ -27,6 +27,9 @@ function Album({ name, image, date, detailed }: { name: string, image: string, d
                     priority={false}
                 />
             </div>
+            <div className='pt-3 text-center'>
+                {new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+            </div>
             <div className='py-3 text-center' suppressHydrationWarning={true}>
                 {!detailed ? `${DaysSince(date)} Days` : <CountUpTimer startDate={date} />}
             </div>
