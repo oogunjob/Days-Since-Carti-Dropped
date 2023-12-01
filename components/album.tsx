@@ -1,16 +1,7 @@
 import React from 'react'
 import CountUpTimer from './countuptimer';
 import Image from 'next/image';
-
-// Calculate the number of days since a date
-function DaysSince(dateString: string) {
-    const pastDate: Date = new Date(dateString);
-    const currentDate: Date = new Date();
-
-    const daysSince: number = Math.floor((currentDate.getTime() - pastDate.getTime()) / (1000 * 60 * 60 * 24));
-
-    return daysSince;
-}
+import DateDisplay from './datedisplay';
 
 function Album({ name, image, date, detailed }: { name: string, image: string, date: string, detailed?: boolean }) {
     return (
@@ -31,7 +22,7 @@ function Album({ name, image, date, detailed }: { name: string, image: string, d
                 {new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
             </div>
             <div className='py-3 text-center' suppressHydrationWarning={true}>
-                {!detailed ? `${DaysSince(date)} Days` : <CountUpTimer startDate={date} />}
+                {!detailed ? <DateDisplay startDate={date} /> : <CountUpTimer startDate={date} />}
             </div>
         </div>
     )
