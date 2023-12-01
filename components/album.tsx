@@ -11,7 +11,7 @@ function Album({ name, image, date, detailed }: { name: string, image: string, d
             </div>
             <div>
                 <Image
-                    src={require(`../images/${image}.jpg`)}
+                    src={require(`../images/${image}`)}
                     width={280}
                     height={280}
                     alt={name}
@@ -19,7 +19,7 @@ function Album({ name, image, date, detailed }: { name: string, image: string, d
                 />
             </div>
             <div className='pt-3 text-center'>
-                {new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                {new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })}
             </div>
             <div className='py-3 text-center' suppressHydrationWarning={true}>
                 {!detailed ? <DateDisplay startDate={date} /> : <CountUpTimer startDate={date} />}
