@@ -1,5 +1,6 @@
 "use client"
 import Album from '@/components/album';
+import CountUpTimer from '@/components/countuptimer';
 import Footer from '@/components/footer';
 import Script from 'next/script';
 import { useState } from 'react';
@@ -70,10 +71,10 @@ export default function Home() {
                 <Album name="Playboi Carti" image="self_titled.jpg" date="2017-04-17T00:00:00.000Z" />
                 <Album name="Die Lit" image="die_lit.jpg" date="2018-05-11T00:00:00.000Z" />
               </div>
-              <Album name="Whole Lotta Red" image="whole_lotta_red.jpg" date="2020-12-25T00:00:00.000Z" detailed />
+              <Album name="Whole Lotta Red" image="whole_lotta_red.jpg" date="2020-12-25T00:00:00.000Z" />
             </div>
             <div className="py-3 text-lg text-center font-bold">
-              plaYb0i cArtI's n3xT aLBUm _______ wILL bE dR0PPiNG 1n _____ dAyS 💕💋
+              plaYb0i cArtI's n3xT aLBUm _______ wILL bE dR0PPiNG 1n <CountUpTimer startDate={"2024-01-05T00:00:00.000Z"} /> 💕💋
             </div>
           </div>
         ) : (

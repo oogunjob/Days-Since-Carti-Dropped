@@ -8,10 +8,10 @@ const CountUpTimer = ({ startDate }: { startDate: string }) => {
         const start = new Date(startDate);
         const diff = now.getTime() - start.getTime();
 
-        let seconds = Math.floor(diff / 1000);
-        let minutes = Math.floor(seconds / 60);
-        let hours = Math.floor(minutes / 60);
-        const days = Math.floor(hours / 24);
+        let seconds = Math.abs(Math.floor(diff / 1000));
+        let minutes = Math.abs(Math.floor(seconds / 60));
+        let hours = Math.abs(Math.floor(minutes / 60));
+        const days = Math.abs(Math.floor(hours / 24));
 
         hours = hours % 24;
         minutes = minutes % 60;
