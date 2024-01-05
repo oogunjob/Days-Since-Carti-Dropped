@@ -74,7 +74,7 @@ export default function Home() {
               <Album name="Whole Lotta Red" image="whole_lotta_red.jpg" date="2020-12-25T00:00:00.000Z" />
             </div>
             <div className="py-3 text-lg text-center font-bold">
-              plaYb0i cArtI's n3xT aLBUm _______ wILL bE dR0PPiNG 1n <CountUpTimer startDate={"2024-01-05T00:00:00.000Z"} /> 💕💋
+              plaYb0i cArtI's n3xT aLBUm _______ wILL bE dR0PPiNG 1n <CountUpTimer startDate={"2024-01-26T00:00:00.000Z"} /> 💕💋
             </div>
           </div>
         ) : (
