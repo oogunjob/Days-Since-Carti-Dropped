@@ -8,6 +8,29 @@ import { useState } from 'react';
 export default function Home() {
   const [isAlbum, setIsAlbum] = useState<boolean>(true);
 
+  const albums = [
+    {
+      title: "Playboi Carti",
+      release_date: "2017-04-17T00:00:00.000Z",
+      image: "self_titled.jpg",
+    },
+    {
+      title: "Die Lit",
+      release_date: "2018-05-11T00:00:00.000Z",
+      image: "die_lit.jpg",
+    },
+    {
+      title: "Whole Lotta Red",
+      release_date: "2020-12-25T00:00:00.000Z",
+      image: "whole_lotta_red.jpg",
+    },
+    {
+      title: "MUSIC",
+      release_date: "2025-03-14T00:00:00.000Z",
+      image: "whole_lotta_red.jpg",
+    },
+  ];
+
   const singles_features = [
     {
       title: "FE!N",
@@ -66,28 +89,27 @@ export default function Home() {
 
         {isAlbum ? (
           <div>
-            <div className="flex flex-col w-full items-center">
-              <div className="flex flex-col md:flex-row md:justify-between">
-                <Album name="Playboi Carti" image="self_titled.jpg" date="2017-04-17T00:00:00.000Z" />
-                <Album name="Die Lit" image="die_lit.jpg" date="2018-05-11T00:00:00.000Z" />
-              </div>
-              <Album name="Whole Lotta Red" image="whole_lotta_red.jpg" date="2020-12-25T00:00:00.000Z" />
+            <div className="mb-4 text-center text-lg font-bold">Albums</div>
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {albums.map((album, index) => (
+                <div key={index}>
+                  <Album name={album.title} image={album.image} date={album.release_date} />
+                </div>
+              ))}
             </div>
             <div className="py-3 text-lg text-center font-bold">
-              plaYb0i cArtI's n3xT aLBUm _______ wILL bE dR0PPiNG 1n <CountUpTimer startDate={"2024-09-12T19:00:00.000-05:00"} /> 💕💋
+              plaYb0i cArtI's n3xT aLBUm BABY BOI wILL bE dR0PPiNG 1n <CountUpTimer startDate={"2024-09-12T19:00:00.000-05:00"} /> 💕💋
             </div>
           </div>
         ) : (
           <div>
             <div className="mb-4 text-center text-lg font-bold">Singles/Features since 2020</div>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
-              {singles_features.map((single_feature, index) => {
-                return (
-                  <div key={index}>
-                    <Album name={single_feature.title} image={single_feature.image} date={single_feature.release_date} />
-                  </div>
-                );
-              })}
+              {singles_features.map((single_feature, index) => (
+                <div key={index}>
+                  <Album name={single_feature.title} image={single_feature.image} date={single_feature.release_date} />
+                </div>
+              ))}
             </div>
           </div>
         )}
