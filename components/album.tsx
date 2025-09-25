@@ -18,6 +18,7 @@ function Album({ name, image, date, detailed }: { name: string, image: string, d
                     height={280}
                     alt={name}
                     priority={false}
+                    unoptimized
                 />
             </div>
             <div className='pt-3 text-center'>
