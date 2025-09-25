@@ -4,6 +4,8 @@ import Image from 'next/image';
 import DateDisplay from './datedisplay';
 
 function Album({ name, image, date, detailed }: { name: string, image: string, date: string, detailed?: boolean }) {
+    const isExternal = image.startsWith("http");
+    
     return (
         <div className="flex flex-col justify-center items-center m-4 font-semibold text-lg">
             <div className='py-2'>
@@ -11,7 +13,7 @@ function Album({ name, image, date, detailed }: { name: string, image: string, d
             </div>
             <div>
                 <Image
-                    src={require(`../images/${image}`)}
+                    src={isExternal ? image : require(`../images/${image}`)}
                     width={280}
                     height={280}
                     alt={name}
