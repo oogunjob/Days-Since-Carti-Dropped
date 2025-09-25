@@ -27,7 +27,7 @@ export default function Home() {
     {
       title: "MUSIC",
       release_date: "2025-03-14T00:00:00.000Z",
-      image: "whole_lotta_red.jpg",
+      image: music.jpg",
     },
   ];
 
