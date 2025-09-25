@@ -98,7 +98,7 @@ export default function Home() {
               ))}
             </div>
             <div className="py-3 text-lg text-center font-bold">
-              plaYb0i cArtI's n3xT aLBUm BABY BOI wILL bE dR0PPiNG 1n <CountUpTimer startDate={"2024-09-12T19:00:00.000-05:00"} /> 💕💋
+              plaYb0i cArtI's n3xT aLBUm BABY BOI wILL bE dR0PPiNG 1n <CountUpTimer startDate={"2025-12-25T19:00:00.000-05:00"} /> 💕💋
             </div>
           </div>
         ) : (
