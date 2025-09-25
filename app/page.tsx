@@ -32,37 +32,117 @@ export default function Home() {
   ];
 
   const singles_features = [
-    {
-      title: "FE!N",
-      release_date: "2023-07-28T00:00:00.000Z",
-      image: "singles/utopia.png",
-    },
-    {
-      title: "Popular",
-      release_date: "2023-06-02T00:00:00.000Z",
-      image: "singles/popular.jpeg",
-    },
-    {
-      title: "Unlock It",
-      release_date: "2021-08-19T00:00:00.000Z",
-      image: "singles/unlock_it.png",
-    },
-    {
-      title: "Miss the Rage",
-      release_date: "2021-05-07T00:00:00.000Z",
-      image: "singles/miss_the_rage.png",
-    },
-    {
-      title: "Pain 1993",
-      release_date: "2020-05-01T00:00:00.000Z",
-      image: "singles/pain1993.jpg",
-    },
-    {
-      title: "@ MEH",
-      release_date: "2020-04-16T00:00:00.000Z",
-      image: "singles/atmeh.jpg",
-    }
-  ];
+  {
+    "title": "Fire Your Manager",
+    "release_date": "2025-07-25T00:00:00.000Z",
+    "image": ""
+  },
+  {
+    "title": "UNLIMITED",
+    "release_date": "2025-03-28T00:00:00.000Z",
+    "image": ""
+  },
+  {
+    "title": "Blick Sum",
+    "release_date": "2025-01-28T00:00:00.000Z",
+    "image": ""
+  },
+  {
+    "title": "Rather Lie",
+    "release_date": "2025-01-15T00:00:00.000Z",
+    "image": ""
+  },
+  {
+    "title": "All Red",
+    "release_date": "2024-09-13T00:00:00.000Z",
+    "image": ""
+  },
+  {
+    "title": "Field Trip",
+    "release_date": "2024-08-02T00:00:00.000Z",
+    "image": ""
+  },
+  {
+    "title": "I Luv It",
+    "release_date": "2024-03-15T00:00:00.000Z",
+    "image": ""
+  },
+  {
+    "title": "Type Shit",
+    "release_date": "2024-03-08T00:00:00.000Z",
+    "image": ""
+  },
+  {
+    "title": "Carnival",
+    "release_date": "2024-02-10T00:00:00.000Z",
+    "image": ""
+  },
+  {
+    "title": "Timeless",
+    "release_date": "2023-09-08T00:00:00.000Z",
+    "image": ""
+  },
+  {
+    "title": "FE!N",
+    "release_date": "2023-07-28T00:00:00.000Z",
+    "image": "singles/utopia.png"
+  },
+  {
+    "title": "Popular",
+    "release_date": "2023-06-02T00:00:00.000Z",
+    "image": "singles/popular.jpeg"
+  },
+  {
+    "title": "Junya Pt 2",
+    "release_date": "2021-08-29T00:00:00.000Z",
+    "image": ""
+  },
+  {
+    "title": "Junya",
+    "release_date": "2021-08-29T00:00:00.000Z",
+    "image": ""
+  },
+  {
+    "title": "Off the Grid",
+    "release_date": "2021-08-29T00:00:00.000Z",
+    "image": ""
+  },
+  {
+    "title": "Ho mixide",
+    "release_date": "2021-08-27T00:00:00.000Z",
+    "image": ""
+  },
+  {
+    "title": "Unlock It",
+    "release_date": "2021-08-19T00:00:00.000Z",
+    "image": "singles/unlock_it.png"
+  },
+  {
+    "title": "Switching Lanes",
+    "release_date": "2021-06-11T00:00:00.000Z",
+    "image": ""
+  },
+  {
+    "title": "Miss the Rage",
+    "release_date": "2021-05-07T00:00:00.000Z",
+    "image": "singles/miss_the_rage.png"
+  },
+  {
+    "title": "Flex Up",
+    "release_date": "2020-11-27T00:00:00.000Z",
+    "image": ""
+  },
+  {
+    "title": "Pain 1993",
+    "release_date": "2020-05-01T00:00:00.000Z",
+    "image": "singles/pain1993.jpg"
+  },
+  {
+    "title": "@ MEH",
+    "release_date": "2020-04-16T00:00:00.000Z",
+    "image": "singles/atmeh.jpg"
+  }
+];
 
   return (
     <div>
