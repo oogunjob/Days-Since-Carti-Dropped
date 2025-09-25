@@ -35,52 +35,47 @@ export default function Home() {
   {
     "title": "Fire Your Manager",
     "release_date": "2025-07-25T00:00:00.000Z",
-    "image": ""
+    "image": "https://i1.sndcdn.com/artworks-RJAzqbUriFbB-0-t500x500.jpg"
   },
   {
     "title": "UNLIMITED",
     "release_date": "2025-03-28T00:00:00.000Z",
-    "image": ""
+    "image": "https://i1.sndcdn.com/artworks-2uCnDCGqKL4x-0-t500x500.jpg"
   },
   {
     "title": "Blick Sum",
     "release_date": "2025-01-28T00:00:00.000Z",
-    "image": ""
-  },
-  {
-    "title": "Rather Lie",
-    "release_date": "2025-01-15T00:00:00.000Z",
-    "image": ""
+    "image": "https://i1.sndcdn.com/artworks-H3TeXTi1nBPa2yCK-uUYwUA-t500x500.png"
   },
   {
     "title": "All Red",
     "release_date": "2024-09-13T00:00:00.000Z",
-    "image": ""
+    "image": "https://i.scdn.co/image/ab67616d0000b273ca15942c726ec9c39796435e"
   },
   {
     "title": "Field Trip",
     "release_date": "2024-08-02T00:00:00.000Z",
-    "image": ""
+    "image": "https://i.scdn.co/image/ab67616d0000b273445e7de7cb6abdaafd6ffb76"
   },
   {
     "title": "I Luv It",
     "release_date": "2024-03-15T00:00:00.000Z",
-    "image": ""
+    "image": "https://cdn-images.dzcdn.net/images/cover/a9237e8ba6402e4373522f72f4c57ea5/1900x1900-000000-80-0-0.jpg"
   },
   {
     "title": "Type Shit",
     "release_date": "2024-03-08T00:00:00.000Z",
-    "image": ""
+    "image": "https://i.scdn.co/image/ab67616d0000b2731729574fe2a8e391a2ce1ece"
   },
   {
     "title": "Carnival",
     "release_date": "2024-02-10T00:00:00.000Z",
-    "image": ""
+    "image": "https://i1.sndcdn.com/artworks-rVQTluKMt3jCODfH-rgLrFA-t1080x1080.jpg"
   },
   {
     "title": "Timeless",
     "release_date": "2023-09-08T00:00:00.000Z",
-    "image": ""
+    "image": "https://i.scdn.co/image/ab67616d0000b27358cd6595ed970f6862906ab8"
   },
   {
     "title": "FE!N",
@@ -95,22 +90,17 @@ export default function Home() {
   {
     "title": "Junya Pt 2",
     "release_date": "2021-08-29T00:00:00.000Z",
-    "image": ""
+    "image": "https://i.scdn.co/image/ab67616d0000b273cad190f1a73c024e5a40dddd"
   },
   {
     "title": "Junya",
     "release_date": "2021-08-29T00:00:00.000Z",
-    "image": ""
+    "image": "https://i.scdn.co/image/ab67616d0000b273cad190f1a73c024e5a40dddd"
   },
   {
     "title": "Off the Grid",
     "release_date": "2021-08-29T00:00:00.000Z",
-    "image": ""
-  },
-  {
-    "title": "Ho mixide",
-    "release_date": "2021-08-27T00:00:00.000Z",
-    "image": ""
+    "image": "https://cdn.mp3poolonline.com/uploads/images/track/216211/file_cover/216211_origin.png"
   },
   {
     "title": "Unlock It",
@@ -120,7 +110,7 @@ export default function Home() {
   {
     "title": "Switching Lanes",
     "release_date": "2021-06-11T00:00:00.000Z",
-    "image": ""
+    "image": "https://i1.sndcdn.com/artworks-Lcp07rRh6SiL-0-t500x500.jpg"
   },
   {
     "title": "Miss the Rage",
@@ -130,7 +120,7 @@ export default function Home() {
   {
     "title": "Flex Up",
     "release_date": "2020-11-27T00:00:00.000Z",
-    "image": ""
+    "image": "https://i1.sndcdn.com/artworks-GNZwkwA6VN1T-0-t500x500.jpg"
   },
   {
     "title": "Pain 1993",
